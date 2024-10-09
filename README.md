@@ -8,7 +8,7 @@ Skills
 Contact
 License
 About
-<p align="center"> <img src="https://via.placeholder.com/150" alt="MRD-Brains logo" /> </p>
+<p align="center"> <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/logo.png" alt="MRD-Brains logo" /> </p>
 MRD-Brains is a collaborative team of developers, designers, and innovators who specialize in creating cutting-edge digital solutions. Our portfolio spans across web development, UX/UI design, machine learning, and software development.
 
 Projects
