@@ -1,6 +1,6 @@
 # MRD-Brains Portfolio
 
-![Finter Logo](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/logo.png) <!-- Replace with the path to your logo -->
+<img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/logo.png" alt="Finter Logo" width="150"/> 
 
 ## Introduction
 Welcome to the MRD-Brains portfolio! This portfolio showcases the innovative software solutions and services offered by MRD-Brains, a leading software development company. Our commitment to client success drives us to deliver exceptional and customized digital solutions.
@@ -27,17 +27,29 @@ Welcome to the MRD-Brains portfolio! This portfolio showcases the innovative sof
 ## Screenshots
 Here are some screenshots of the MRD-Brains portfolio:
 
-### Homepage
-![Homepage Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/HomePage.jpeg) <!-- Replace with the path to your screenshot -->
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-### About Us
-![About Us Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/AboutPage.jpeg) <!-- Replace with the path to your screenshot -->
+  <div style="width: 48%; margin-bottom: 10px;">
+    <h3>Homepage</h3>
+    <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/HomePage.jpeg" alt="Homepage Screenshot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px;"/>
+  </div>
 
-### Services
-![Services Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/ServicePage.jpeg) <!-- Replace with the path to your screenshot -->
+  <div style="width: 48%; margin-bottom: 10px;">
+    <h3>About Us</h3>
+    <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/AboutPage.jpeg" alt="About Us Screenshot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px;"/>
+  </div>
 
-### Contact Us
-![Contact Us Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/COntactPage.jpeg) <!-- Replace with the path to your screenshot -->
+  <div style="width: 48%; margin-bottom: 10px;">
+    <h3>Services</h3>
+    <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/ServicePage.jpeg" alt="Services Screenshot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px;"/>
+  </div>
+
+  <div style="width: 48%; margin-bottom: 10px;">
+    <h3>Contact Us</h3>
+    <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/COntactPage.jpeg" alt="Contact Us Screenshot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px;"/>
+  </div>
+
+</div>
 
 ## Contact Information
 For more information, please contact us:
