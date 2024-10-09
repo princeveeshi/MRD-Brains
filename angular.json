@@ -22,10 +22,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/css/font-awesome.min.css",
-              "src/css/style.css",
-              "src/css/responsive.css",
+            "styles": [              
               "src/styles.css"
             ],
             "scripts": [
