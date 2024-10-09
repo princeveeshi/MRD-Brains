@@ -1,6 +1,6 @@
 # MRD-Brains Portfolio
 
-![Finter Logo](../MRD/src/assets/images/logo.png) <!-- Replace with the path to your logo -->
+![Finter Logo](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/logo.png) <!-- Replace with the path to your logo -->
 
 ## Introduction
 Welcome to the MRD-Brains portfolio! This portfolio showcases the innovative software solutions and services offered by MRD-Brains, a leading software development company. Our commitment to client success drives us to deliver exceptional and customized digital solutions.
@@ -28,16 +28,16 @@ Welcome to the MRD-Brains portfolio! This portfolio showcases the innovative sof
 Here are some screenshots of the MRD-Brains portfolio:
 
 ### Homepage
-![Homepage Screenshot](../MRD/src/assets/images/Screenshot/HomePage.jpeg) <!-- Replace with the path to your screenshot -->
+![Homepage Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/HomePage.jpeg) <!-- Replace with the path to your screenshot -->
 
 ### About Us
-![About Us Screenshot](../MRD/src/assets/images/Screenshot/AboutPage.jpeg) <!-- Replace with the path to your screenshot -->
+![About Us Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/AboutPage.jpeg) <!-- Replace with the path to your screenshot -->
 
 ### Services
-![Services Screenshot](../MRD/src/assets/images/Screenshot/ServicePage.jpeg) <!-- Replace with the path to your screenshot -->
+![Services Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/ServicePage.jpeg) <!-- Replace with the path to your screenshot -->
 
 ### Contact Us
-![Contact Us Screenshot](../MRD/src/assets/images/Screenshot/COntactPage.jpeg) <!-- Replace with the path to your screenshot -->
+![Contact Us Screenshot](https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/Screenshot/COntactPage.jpeg) <!-- Replace with the path to your screenshot -->
 
 ## Contact Information
 For more information, please contact us:
