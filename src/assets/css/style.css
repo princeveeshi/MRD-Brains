@@ -6,7 +6,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 10px 0;
 }
 
 .layout_padding2 {
@@ -222,7 +222,7 @@ a:focus {
 }
 
 .header_section .header_bottom {
-  padding: 15px 0;
+  padding: 0px 0;
 }
 
 .header_section .header_bottom .container-fluid {
@@ -1046,6 +1046,9 @@ a:focus {
 
 /* choose us */
 
+.card.Choose{
+  color: #000000;
+}
 .card.Choose:hover {
   background-color:#2c7873; 
   color: #fff;

@@ -1,40 +1,50 @@
-MRD-Brains Portfolio
-Welcome to the MRD-Brains portfolio repository! This project showcases a collection of work and achievements by MRD-Brains, including various creative projects, development initiatives, and innovation ideas.
+# MRD-Brains Portfolio
 
-Table of Contents
-About
-Projects
-Skills
-Contact
-License
-About
-<p align="center"> <img src="https://github.com/princeveeshi/MRD-Brains/blob/main/src/assets/images/logo.png" alt="MRD-Brains logo" /> </p>
-MRD-Brains is a collaborative team of developers, designers, and innovators who specialize in creating cutting-edge digital solutions. Our portfolio spans across web development, UX/UI design, machine learning, and software development.
+![Finter Logo](../MRD/src/assets/images/logo.png) <!-- Replace with the path to your logo -->
 
-Projects
-Here are some of the notable projects we’ve worked on:
+## Introduction
+Welcome to the MRD-Brains portfolio! This portfolio showcases the innovative software solutions and services offered by MRD-Brains, a leading software development company. Our commitment to client success drives us to deliver exceptional and customized digital solutions.
 
-1. Project Alpha
-Description: A full-stack web application built using Angular and Node.js.
-Features:
-Dynamic user authentication system
-Real-time data updates with WebSockets
-User-friendly design with Bootstrap
-GitHub Link: Project Alpha
-2. Creative UI Design
-Description: A modern UI/UX design concept for a mobile app.
-Tools: Figma, Adobe XD
-Behance Link: View Design
-Skills
-MRD-Brains has expertise in a wide range of areas:
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Contact Information](#contact-information)
 
-Frontend Development: Angular, React, HTML5, CSS3, JavaScript
-Backend Development: Node.js, Express, Python, REST APIs
-Design: Figma, Adobe Creative Suite, Sketch
-Machine Learning: TensorFlow, Keras, scikit-learn
-Contact
-We’d love to hear from you! Reach out to us for collaboration or inquiries.
+## Technologies Used
+- **Frontend**: HTML5, CSS3, JavaScript, Angular, React
+- **Backend**: .NET, Node.js, ASP.NET
+- **Database**: SQL Server, MongoDB
+- **Hosting**: AWS, Azure
+- **Tools**: Git, Visual Studio
 
-<p align="center"> <a href="mailto:contact@mrdbrains.com"> <img src="https://img.shields.io/badge/Email-Contact%20Us-blue" alt="Email Us" /> </a> <a href="https://www.linkedin.com/in/mrdbrains"> <img src="https://img.shields.io/badge/LinkedIn-Connect%20With%20Us-blue" alt="LinkedIn" /> </a> </p>
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Features
+- **Responsive Design**: The website is fully responsive and works seamlessly on various devices and screen sizes.
+- **User-Friendly Interface**: Designed for optimal user experience with easy navigation and accessibility.
+- **Dynamic Content**: The portfolio dynamically displays projects and services using modern JavaScript frameworks.
+- **Contact Form**: Integrated contact form for inquiries and feedback.
+
+## Screenshots
+Here are some screenshots of the MRD-Brains portfolio:
+
+### Homepage
+![Homepage Screenshot](../MRD/src/assets/images/Screenshot/HomePage.jpeg) <!-- Replace with the path to your screenshot -->
+
+### About Us
+![About Us Screenshot](../MRD/src/assets/images/Screenshot/AboutPage.jpeg) <!-- Replace with the path to your screenshot -->
+
+### Services
+![Services Screenshot](../MRD/src/assets/images/Screenshot/ServicePage.jpeg) <!-- Replace with the path to your screenshot -->
+
+### Contact Us
+![Contact Us Screenshot](../MRD/src/assets/images/Screenshot/COntactPage.jpeg) <!-- Replace with the path to your screenshot -->
+
+## Contact Information
+For more information, please contact us:
+
+- **Email**: [seth99vikas@gmail.com](mailto:seth99vikas@gmail.com)
+- **Phone**: +91 (968) 240 1266
+
+---
+
+Thank you for visiting the MRD-Brains portfolio! We look forward to collaborating with you to create innovative solutions that drive success.
