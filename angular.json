@@ -23,9 +23,21 @@
               "src/assets"
             ],
             "styles": [
+              "src/css/font-awesome.min.css",
+              "src/css/style.css",
+              "src/css/responsive.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-3.4.1.min.js",
+              "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+              "src/js/bootstrap.js",
+              "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js",
+              "https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js",
+              "src/js/custom.js",
+              "https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7342ec11-682f-4e90-b6a4-eef68d843cdb"
   }
 }
