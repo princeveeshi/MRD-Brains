@@ -18,6 +18,7 @@ import { DevOpsDevelopmentTechnologiesComponent } from './Technology/devOpsDevel
 import { FrameworksDevevelopmentTechnologiesComponent } from './Technology/frameworksDevevelopmentTechnologies/frameworksDevevelopmentTechnologies.component';
 import { FrontendDevelopmentTechnologiesComponent } from './Technology/frontendDevelopmentTechnologies/frontendDevelopmentTechnologies.component';
 import { MobileDevelopmentTechnologiesComponent } from './Technology/mobileDevelopmentTechnologies/mobileDevelopmentTechnologies.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MobileDevelopmentTechnologiesComponent } from './Technology/mobileDevel
     CloudDevelopmentTechnologiesComponent,
     DevOpsDevelopmentTechnologiesComponent,
     CMSDevelopmentTechnologiesComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
