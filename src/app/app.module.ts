@@ -18,7 +18,10 @@ import { DevOpsDevelopmentTechnologiesComponent } from './Technology/devOpsDevel
 import { FrameworksDevevelopmentTechnologiesComponent } from './Technology/frameworksDevevelopmentTechnologies/frameworksDevevelopmentTechnologies.component';
 import { FrontendDevelopmentTechnologiesComponent } from './Technology/frontendDevelopmentTechnologies/frontendDevelopmentTechnologies.component';
 import { MobileDevelopmentTechnologiesComponent } from './Technology/mobileDevelopmentTechnologies/mobileDevelopmentTechnologies.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './SharedComponent/PageNotFound/PageNotFound.component';
+import { ChatbotComponent } from './SharedComponent/chat-bot/chat-bot.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -39,12 +42,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DevOpsDevelopmentTechnologiesComponent,
     CMSDevelopmentTechnologiesComponent,
     PageNotFoundComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule ,
-
+    HttpClientModule,
     ReactiveFormsModule,
     
   ],

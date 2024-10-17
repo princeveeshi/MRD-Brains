@@ -1,0 +1,27 @@
+<div class="chat">
+    <div class="chat-title">     
+        <h2>MRD-Brains <i class="fa fa-star text-warning" aria-hidden="true"></i></h2>
+        <figure class="avatar">
+            <img src="../../../assets/images/UserIcon.png" alt="Avatar" />
+        </figure>
+    </div>
+    <div class="messages" #messagesContainer>
+        <div class="messages-content">
+            <div *ngFor="let message of messages" [ngClass]="{'message-personal': message.sender === 'user', 'message-new': message.sender === 'bot'}">
+                <!-- For user messages, render as plain text -->
+                <p *ngIf="message.sender === 'user'">{{ message.text }}</p>
+                <!-- For bot messages, render the content as HTML -->
+                <p *ngIf="message.sender === 'bot'" [innerHTML]="message.text"></p>
+            </div>
+            <div *ngIf="isTyping" class="typing-indicator">Bot is typing...</div>
+        </div>
+    </div>
+    <form (ngSubmit)="sendMessage()">
+        <div class="message-box">
+            <input [(ngModel)]="userInput" name="message" type="text" class="message-input" placeholder="Type message..." required aria-label="Chat input"/>
+            <button type="submit" class="message-submit" [disabled]="!userInput">Send</button>
+        </div>
+    </form>
+  </div>
+  <div class="bg"></div>
+  
