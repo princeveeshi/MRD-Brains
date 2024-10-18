@@ -10,7 +10,7 @@ app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.json());
 
 // Directly include the API key here (not recommended for production)
-const GEMINI_API_KEY = 'key'; 
+const GEMINI_API_KEY = 'AIzaSyDSxcXuCiugOP5-Ffg-VPY3HiCF9gQTVIw'; 
 
 // Function to make API request with exponential backoff
 async function makeApiRequest(userMessage, retries = 3) {
