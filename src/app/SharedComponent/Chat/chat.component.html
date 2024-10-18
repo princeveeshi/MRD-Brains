@@ -11,20 +11,25 @@
             </header>
             <div class="col-md-3 d-none d-md-block"> <!-- Hide on mobile -->
                 <div class="action-list">
-                    <h4>Action</h4>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>Chats</h4>
+                        <span (click)="createNewSession('New Chat')" style="cursor: pointer;">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </div>
                     <ul class="list-group">
-                        <li class="list-group-item">Action 1</li>
-                        <li class="list-group-item">Action 2</li>
-                        <li class="list-group-item">Action 3</li>
-                        <!-- Add more actions as needed -->
+                        <li class="list-group-item" *ngFor="let session of sessions"
+                            (click)="switchSession(session.id)">
+                            {{ session.name }}
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-9">
                 <main class="msger-chat" #messagesContainer>
-                    <div *ngFor="let message of messages" class="msg"
-                        [ngClass]="{'user': message.sender === 'user', 'bot': message.sender === 'bot'}">
+                    <div *ngFor="let message of currentMessages" class="msg"
+                        [ngClass]="{'user': message.sender === 'user', 'bot': message.sender === 'Tamanna'}">
                         <div class="msg-bubble">
                             <div class="msg-info">
                                 <div class="msg-info-name">{{ message.sender }}</div>
@@ -33,9 +38,9 @@
                             <div class="msg-text" [innerHTML]="message.text"></div>
                         </div>
                     </div>
+                    <!-- Typing Indicator -->
                     <div *ngIf="isTyping" class="typing-indicator">
-                        <img src="../../../assets/images/Chat-Animation.gif" alt="Tamanna is Typing..."
-                            class="typing-gif">
+                        <img src="../../../assets/images/Chat-Animation.gif" alt="Typing..." class="typing-gif">
                     </div>
                 </main>
 

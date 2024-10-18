@@ -8,48 +8,63 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements AfterViewChecked {
-  messages: { sender: string, text: string | SafeHtml, time: string }[] = [
-    { sender: 'Tamanna', text: 'Welcome to HelpDesk! How can I assist you today?', time: this.getCurrentTime() }
-  ];
+  sessions: { id: number, name: string, messages: { sender: string, text: string | SafeHtml, time: string }[] }[] = [];
+  currentSessionId = 0; // ID of the current chat session
   userInput = '';
   isTyping = false;
 
   @ViewChild('messagesContainer') private messagesContainer!: ElementRef; // Non-null assertion
 
-  constructor(private chatbotService: ChatbotService, private sanitizer: DomSanitizer) { }
+  constructor(private chatbotService: ChatbotService, private sanitizer: DomSanitizer) {
+    this.createNewSession('General Chat'); // Start with a default session
+  }
 
-   
+  // Creates a new chat session
+  createNewSession(name: string) {
+    const newSessionId = this.sessions.length;
+    this.sessions.push({
+      id: newSessionId,
+      name,
+      messages: [{ sender: 'Tamanna', text: 'Welcome to ' + name + '!', time: this.getCurrentTime() }]
+    });
+    this.currentSessionId = newSessionId; // Switch to new session
+  }
+
+  // Switches to a different chat session
+  switchSession(sessionId: number) {
+    this.currentSessionId = sessionId;
+  }
+
+  // Returns the messages of the current session
+  get currentMessages() {
+    return this.sessions[this.currentSessionId]?.messages || [];
+  }
+
   sendMessage() {
     if (this.userInput.trim()) {
       const messageTime = this.getCurrentTime();
-      this.messages.push({ sender: 'user', text: this.userInput, time: messageTime });
+      this.currentMessages.push({ sender: 'user', text: this.userInput, time: messageTime });
 
       this.isTyping = true;
 
       this.chatbotService.getResponse(this.userInput).subscribe({
         next: (response) => {
           this.isTyping = false;
-
-
           const botReply = response.candidates[0].content.parts[0].text || 'Sorry, I did not understand that.';
           const { rawHtml } = this.processHtml(botReply);
           const safeRawHtml: SafeHtml = this.sanitizer.bypassSecurityTrustHtml(rawHtml);
-          console.log(response);
-          
-          console.log('botReply',botReply);
-          this.messages.push({ sender: 'Tamanna', text: safeRawHtml, time: messageTime });
+          this.currentMessages.push({ sender: 'Tamanna', text: safeRawHtml, time: messageTime });
         },
         error: (error) => {
           this.isTyping = false;
-
           console.error('Error fetching AI response:', error);
-          this.messages.push({ sender: 'bot', text: 'Sorry, I could not process your request.', time: messageTime });
+          this.currentMessages.push({ sender: 'Tamanna', text: 'Sorry, I could not process your request.', time: messageTime });
         }
       });
       this.userInput = '';
     }
   }
-
+ 
   processHtml(text: string): { rawHtml: string, renderedHtml: string } {
     // Extract code between ``` and escape it for display
     const codeMatch = text.match(/```html\n([\s\S]+?)```/);
@@ -83,7 +98,6 @@ export class ChatComponent implements AfterViewChecked {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
   }
-  
 
   getCurrentTime(): string {
     const now = new Date();
