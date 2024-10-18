@@ -47,7 +47,6 @@ export class ChatbotComponent implements AfterViewChecked {
           this.messages.push({ sender: 'bot', text: 'Sorry, I could not process your request.' });
         }
       });
-
       this.userInput = '';
     }
   }
