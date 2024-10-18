@@ -12,6 +12,7 @@ import { DevOpsDevelopmentTechnologiesComponent } from './Technology/devOpsDevel
 import { FrameworksDevevelopmentTechnologiesComponent } from './Technology/frameworksDevevelopmentTechnologies/frameworksDevevelopmentTechnologies.component';
 import { FrontendDevelopmentTechnologiesComponent } from './Technology/frontendDevelopmentTechnologies/frontendDevelopmentTechnologies.component';
 import { MobileDevelopmentTechnologiesComponent } from './Technology/mobileDevelopmentTechnologies/mobileDevelopmentTechnologies.component';
+import { ChatbotComponent } from './SharedComponent/chat-bot/chat-bot.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },   // About route
   { path: 'service', component: ServicesComponent }, // Services route
   { path: 'contact', component: ContactComponent }, // Contact route
+  { path: 'chatBot', component: ChatbotComponent }, // chatBot route
   { path: 'frontend-development', component: FrontendDevelopmentTechnologiesComponent },
   { path: 'backend-development', component: BackendDevelopmentTechnologiesComponent },
   { path: 'mobile-development', component: MobileDevelopmentTechnologiesComponent },

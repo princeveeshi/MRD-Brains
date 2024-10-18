@@ -1,6 +1,9 @@
 <div class="chat">
     <div class="chat-title">     
-        <h2>MRD-Brains <i class="fa fa-star text-warning" aria-hidden="true"></i></h2>
+        <h2 class="text-warning">
+            <i class="fa fa-star " aria-hidden="true"></i>
+            AI-Brains 
+        </h2>
         <figure class="avatar">
             <img src="../../../assets/images/UserIcon.png" alt="Avatar" />
         </figure>
@@ -13,12 +16,12 @@
                 <!-- For bot messages, render the content as HTML -->
                 <p *ngIf="message.sender === 'bot'" [innerHTML]="message.text"></p>
             </div>
-            <div *ngIf="isTyping" class="typing-indicator">Bot is typing...</div>
+            <div *ngIf="isTyping" class="typing-indicator">typing...</div>
         </div>
     </div>
     <form (ngSubmit)="sendMessage()">
         <div class="message-box">
-            <input [(ngModel)]="userInput" name="message" type="text" class="message-input" placeholder="Type message..." required aria-label="Chat input"/>
+            <textarea  [(ngModel)]="userInput"  (keydown.enter)="sendMessage()" name="message" type="text" class="message-input" placeholder="Type message..." required aria-label="Chat input"></textarea>
             <button type="submit" class="message-submit" [disabled]="!userInput">Send</button>
         </div>
     </form>
