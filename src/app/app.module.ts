@@ -21,6 +21,7 @@ import { MobileDevelopmentTechnologiesComponent } from './Technology/mobileDevel
 import { PageNotFoundComponent } from './SharedComponent/PageNotFound/PageNotFound.component';
 import { ChatbotComponent } from './SharedComponent/chat-bot/chat-bot.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChatComponent } from './SharedComponent/Chat/chat.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     DevOpsDevelopmentTechnologiesComponent,
     CMSDevelopmentTechnologiesComponent,
     PageNotFoundComponent,
-    ChatbotComponent
+    ChatbotComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

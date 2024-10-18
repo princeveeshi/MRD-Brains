@@ -1,15 +1,19 @@
-<div class="chat">
-    <div class="chat-title">     
-        <h2 class="text-warning">
-            <i class="fa fa-star " aria-hidden="true"></i>
-            AI-Brains 
-        </h2>
-        <figure class="avatar">
-            <img src="../../../assets/images/UserIcon.png" alt="Avatar" />
-        </figure>
+<div class="chat  container">
+    <div class="chat-title row align-items-center">
+        <div class="col-10">
+            <h2 class="text-warning">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                AI-Brains 
+            </h2>
+        </div>
+        <div class="col-2 text-end">
+            <figure class="avatar">
+                <img src="../../../assets/images/UserIcon.png" alt="Avatar" class="img-fluid rounded-circle" />
+            </figure>
+        </div>
     </div>
-    <div class="messages" #messagesContainer>
-        <div class="messages-content">
+    <div class="messages row">
+        <div class="messages-content col-12" #messagesContainer>
             <div *ngFor="let message of messages" [ngClass]="{'message-personal': message.sender === 'user', 'message-new': message.sender === 'bot'}">
                 <!-- For user messages, render as plain text -->
                 <p *ngIf="message.sender === 'user'">{{ message.text }}</p>
@@ -19,12 +23,18 @@
             <div *ngIf="isTyping" class="typing-indicator">typing...</div>
         </div>
     </div>
-    <form (ngSubmit)="sendMessage()">
-        <div class="message-box">
-            <textarea  [(ngModel)]="userInput"  (keydown.enter)="sendMessage()" name="message" type="text" class="message-input" placeholder="Type message..." required aria-label="Chat input"></textarea>
-            <button type="submit" class="message-submit" [disabled]="!userInput">Send</button>
+    <form (ngSubmit)="sendMessage()" class="row mt-3">
+        <div class="message-box col-12 d-flex">
+            <textarea 
+                [(ngModel)]="userInput" 
+                (keydown.enter)="sendMessage()" 
+                name="message" 
+                class="message-input form-control" 
+                placeholder="Type message..." 
+                required 
+                aria-label="Chat input"></textarea>
+            <button type="submit" class="message-submit btn btn-primary ms-2" [disabled]="!userInput">Send</button>
         </div>
     </form>
-  </div>
-  <div class="bg"></div>
-  
+</div>
+<div class="bg"></div>
